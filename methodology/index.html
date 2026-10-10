@@ -1,1 +1,26 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Methodology — StockFilingChanges</title><link rel="stylesheet" href="../style.css"></head><body><main><nav><a href="../">StockFilingChanges</a><a href="../privacy/">Privacy</a><a href="../support/">Support</a><a href="../terms/">Terms</a></nav><h1>Methodology</h1><p class="lead">A reproducible reading aid, not an investment signal.</p><h2>Source and scope</h2><p>We use free, public <a href="https://www.sec.gov/search-filings/edgar-application-programming-interfaces">SEC EDGAR submissions and company-facts APIs</a> and the original 10-K filing documents. Each comparison is between two consecutive annual filings for the same company. The app displays the filing dates, report dates, and links to both source documents.</p><h2>Text comparison</h2><p>We extract Item 1A, “Risk Factors,” from the filing HTML. When boundaries cannot be identified with adequate confidence, the app marks the section unavailable. We normalize whitespace, compare paragraphs in order, and classify unmatched passages as added, removed, or revised when their vocabulary overlaps sufficiently. A revised match is not a semantic interpretation. Filing formatting, duplicated headings, and reordered text may create false changes or missed changes.</p><h2>Financial facts</h2><p>Selected figures come from SEC company-facts XBRL records matching the accession number, form, report end date, duration, and unit of each original filing. A metric is omitted if either side is unavailable or not directly comparable under these checks. Values can differ from prominent figures in the filing when a company uses different accounting concepts; consult the original statement and notes.</p><h2>Update and correction policy</h2><p>The catalog is generated from public filing data and may lag SEC publication. “Data updated” in the app reflects the catalog generation time, not the filing time. Coverage is selective, not all public companies. If you find a mismatched passage or fact, email <a href="mailto:ixxzhu@gmail.com">ixxzhu@gmail.com</a> with the ticker, filing dates, and the original SEC passage. We will correct or remove demonstrably incorrect comparisons.</p><p class="small">No generative summary, sentiment score, rating, buy/sell recommendation, or forecast is produced. Always verify against original SEC documents before relying on a comparison.</p><footer>© 2026 StockFilingChanges · <a href="../">Home</a></footer></main></body></html>
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Methodology — StockFilingChanges</title>
+  <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+<main>
+  <nav><a href="../">StockFilingChanges</a><a href="../privacy/">Privacy</a><a href="../support/">Support</a><a href="../terms/">Terms</a></nav>
+  <h1>Methodology</h1>
+  <p class="lead">A reproducible reading aid, not an investment signal.</p>
+  <h2>Source and scope</h2>
+  <p>We use free, public <a href="https://www.sec.gov/search-filings/edgar-application-programming-interfaces">SEC EDGAR submissions and company-facts APIs</a> and the original 10-K filing documents. Each comparison is between two consecutive annual filings for the same company. The app displays the filing dates, report dates, and links to both source documents.</p>
+  <h2>Text comparison</h2>
+  <p>We extract Item 1A, “Risk Factors,” from the filing HTML. When boundaries cannot be identified with adequate confidence, the app marks the section unavailable. We normalize whitespace, compare paragraphs in order, and classify unmatched passages as added, removed, or revised when their vocabulary overlaps sufficiently. Revisions where the word and number sequence is unchanged and only punctuation differs are suppressed. A revised match is not a semantic interpretation. Filing formatting, duplicated headings, and reordered text may create false changes or missed changes.</p>
+  <h2>Financial facts</h2>
+  <p>Selected figures come from SEC company-facts XBRL records matching the accession number, form, report end date, duration, and unit of each original filing. A metric is omitted if either side is unavailable or not directly comparable under these checks. Values can differ from prominent figures in the filing when a company uses different accounting concepts; consult the original statement and notes.</p>
+  <h2>Update and correction policy</h2>
+  <p>The catalog is generated from public filing data and may lag SEC publication. “Data updated” in the app reflects the catalog generation time, not the filing time. Coverage is selective, not all public companies. If you find a mismatched passage or fact, email <a href="mailto:ixxzhu@gmail.com">ixxzhu@gmail.com</a> with the ticker, filing dates, and the original SEC passage. We will correct or remove demonstrably incorrect comparisons.</p>
+  <p class="small">No generative summary, sentiment score, rating, buy/sell recommendation, or forecast is produced. Always verify against original SEC documents before relying on a comparison.</p>
+  <footer>© 2026 StockFilingChanges · <a href="../">Home</a></footer>
+</main>
+</body>
+</html>
